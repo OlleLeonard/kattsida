@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 600px){
+ header nav{
+      display: none;
+    }
+  }
+
+.hamburger{
+    display: none;
+  }
+
+  .hamburger:hover{
+    cursor: grab;
+  }
+
+  @media (max-width: 600px){
+    .hamburger{
+        display:flex ;
+        margin-right: 30px;
+       }
+     }
+
+.gif{
+    animation: mymove 15s infinite;
+    position: relative;
+    animation-timing-function: linear;
+    height: 100px;
+    margin-top: -100px;
+    margin-bottom: -13px;
+}
+
+@keyframes mymove {
+  from {right: -90%;}
+  to {right: 5%;}
+}
+
+@media (max-width: 600px){
+    .gif{
+        animation: none;
+       }
+     }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    background-color: blue;
+    color: greenyellow;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+  }
+
+  @media (max-width: 600px){
+    .container{
+        width: 400px;
+       }
+     }
+  
+  
+  .section {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding: 40px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .section1 {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    gap: 30px;
+  }
+
+  @media (max-width: 600px){
+    .section1{
+        display: flex;
+        flex-direction:column;
+       }
+     }
+  
+  .section1 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 600px){
+    .section1 img{
+      width: 100%;
+       }
+     }
+  
+  .section1 h2 {
+    font-size: 2.5rem;
+  }
+  
+  .catGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+   }
+
+.move1{
+    position: relative;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+  @keyframes move1 {
+    0% {left:0px; top:0px;}
+    32% { left:265px; top:0px;}
+    42% { left:532px; top:0px;}
+    56% { left:532px; top:400px;}
+    70% { left:265px; top:400px;}
+    84% { left:0px; top:400px;}
+    100% { left:0px; top:0px;}
+  }
+
+  
+  @media (max-width: 800px){
+    .move1{
+        animation: none;
+       }
+     }
+
+.move2{
+   position: relative;
+   animation-name: move2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+   
+  @keyframes move2 {
+    0%   {left:0px; top:0px;}
+    35%  { left:265px; top:0px;}
+    42%  { left:265px; top:400px;}
+    56%  { left:0px; top:400px;}
+    70% { left:-265px; top:400px;}
+    84% { left:-265px; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+
+  @media (max-width: 800px){
+    .move2{
+        animation: none;
+       }
+     }
+
+  .move3{
+    position: relative;
+    animation-name: move3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+    
+   @keyframes move3 {
+     0%   {left:0px; top:0px;}
+     35%  { left:0px; top:400px;}
+     42%  { left:-265px; top:400px;}
+     56%  { left:-535px; top:400px;}
+     70% { left:-535px; top:0px;}
+     84% { left:-265px; top:0px;}
+     100% { left:0px; top:0px;}
+   }
+
+   @media (max-width: 800px){
+    .move3{
+        animation: none;
+       }
+     }
+
+   .move4{
+    position: relative;
+    animation-name: move4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+    
+   @keyframes move4 {
+     0%   {left:0px; top:0px;}
+     35%  { left:0px; top:-400px;}
+     42%  { left:265px; top:-400px;}
+     56%  { left:535px; top:-400px;}
+     70% { left:535px; top:0px;}
+     84% { left:265px; top:0px;}
+     100% { left:0px; top:0px;}
+   }
+
+   @media (max-width: 800px){
+    .move4{
+        animation: none;
+       }
+     }
+
+   .move5{
+    position: relative;
+    animation-name: move5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+    
+   @keyframes move5 {
+     0%   {left:0px; top:0px;}
+     35%  { left:-265px; top:0px;}
+     42%  { left:-265px; top:-400px;}
+     56%  { left:0px; top:-400px;}
+     70% { left:265px; top:-400px;}
+     84% { left:265px; top:0px;}
+     100% { left:0px; top:0px;}
+   }
+
+   @media (max-width: 800px){
+    .move5{
+        animation: none;
+       }
+     }
+
+   .move6{
+    position: relative;
+    animation-name: move6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+    
+   @keyframes move6 {
+     0%   {left:0px; top:0px;}
+     35%  { left:-265px; top:0px;}
+     42%  { left:-535px; top:0px;}
+     56%  { left:-535px; top:-400px;}
+     70% { left:-265px; top:-400px;}
+     84% { left:0px; top:-400px;}
+     100% { left:0px; top:0px;}
+   }
+
+   @media (max-width: 800px){
+    .move6{
+        animation: none;
+       }
+     }
+  
+  .catGrid img {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .cat1{
+    width: 100%;
+    height: auto;
+  }
+
+  .cat1:hover {
+    transform: scale(1.5)
+  }
+
+  .cat2{
+    width: 100%;
+    height: auto;
+  }
+
+  .cat2:hover{
+    transform: rotateX(150deg);
+}
